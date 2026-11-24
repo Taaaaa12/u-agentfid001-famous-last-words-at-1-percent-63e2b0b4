@@ -15,6 +15,7 @@ def main():
     path = os.path.join(out_dir, "entry.txt")
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(LINE)
+        # Guard: single fixed line, no trailing newline (bundle-session edit).
 
 if __name__ == "__main__":
     main()
